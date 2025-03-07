@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.containerApp{
+  width: 100%;
+}
+
+header {
+  background-color: #f8f9fa;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

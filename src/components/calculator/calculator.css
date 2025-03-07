@@ -1,0 +1,84 @@
+/* Fix the overall layout so columns don’t resize */
+.containerCalc {
+    width: 100%;
+    max-width: 950px;  
+    display: grid;
+    grid-template-columns: 500px 400px;  /* Fixed widths for each column */
+    font-family: 'Joan', sans-serif;
+    margin: 0 auto;             /* Center the container horizontally */
+}
+
+/* Centered heading spanning both columns */
+.heading {
+    grid-column: span 2;
+    grid-row: 1;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+.q1{
+    font-size: large;
+}
+
+/* Fixed-size graph container */
+.graph {
+  grid-row: 2;
+  grid-column: 2;
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+/* Ensure the carousel container doesn’t stretch */
+.calc {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fix the form’s width and center its content */
+.calc form {
+    width: 100%;
+    max-width: 300px;  /* Updated to 300px to match the input */
+    margin: 0 auto; 
+    text-align: center;
+}
+
+/* Center each carousel slide’s content using flexbox */
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Set the input limit to 300px width so it remains consistent */
+.carousel-item .form-control {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Keep buttons uniformly spaced and centered */
+.calc button {
+  margin: 5px;
+}
+
+.carousel-item .form-control.qinput {
+    width: 300px !important;
+}
+
+.graphButtons {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.graphButtons button{
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}

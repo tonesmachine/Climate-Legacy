@@ -1,0 +1,51 @@
+/* Header container with flex layout */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  font-family: 'Joan', sans-serif; 
+  width: 100%;
+  margin: 0;
+}
+
+/* Logo styling */
+.logo h1 {
+  color: #fff;
+  margin: 0;
+  font-family: 'Joan', sans-serif;
+}
+
+/* Navigation styling */
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin-left: 20px;
+}
+
+/* Link styling with underline */
+.nav-menu ul li a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+/* Optional: Hover effect for better UX */
+.nav-menu ul li a:hover {
+  text-decoration: none;
+}
+
+.login-button{
+    background: none;
+    border: none;
+    color: #fff;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
